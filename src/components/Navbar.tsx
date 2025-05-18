@@ -35,7 +35,7 @@ const Navbar = () => {
 
   // Navigation items
   const navigation = [
-    { name: t('nav.home') as string, href: '/' },
+    { name: t('nav.home') as string, href: '/Home' },
     { name: t('nav.services') as string, href: '/services' },
     { name: t('nav.about') as string, href: '/about' },
     { name: t('nav.projects') as string, href: '/projets' },
@@ -60,7 +60,7 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <Link
-                href="/"
+                href="/Home"
                 className="flex items-center space-x-2"
                 passHref
                 legacyBehavior={false}

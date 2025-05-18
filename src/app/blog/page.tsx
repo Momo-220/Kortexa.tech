@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, useAnimation, LazyMotion, domAnimation, m } from 'framer-motion';
@@ -53,11 +53,9 @@ export default function Blog() {
   // Préchargement des animations pour une apparition instantanée
   const controls = useAnimation();
   
-  useEffect(() => {
-    // Démarrer les animations immédiatement sans délai
-    controls.start("visible");
-  }, [controls]);
-
+  const [searchTerm, setSearchTerm] = useState("");
+  const [activeCategory, setActiveCategory] = useState("Tous");
+  
   const blogPosts = [
     {
       id: 1,
@@ -127,6 +125,17 @@ export default function Blog() {
     }
   ];
 
+  // Extraire toutes les catégories uniques
+  const categories = ["Tous", ...Array.from(new Set(blogPosts.map(post => post.category)))];
+  
+  // Filtrer les articles en fonction de la recherche et de la catégorie
+  const filteredPosts = blogPosts.filter(post => {
+    const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
+                         post.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesCategory = activeCategory === "Tous" || post.category === activeCategory;
+    return matchesSearch && matchesCategory;
+  });
+
   return (
     // Utilisation de LazyMotion avec domAnimation pour optimiser le chargement
     <LazyMotion features={domAnimation}>
@@ -181,6 +190,46 @@ export default function Blog() {
           }}
           initial={{ opacity: 0.6 }}
         ></m.div>
+      </section>
+      
+      {/* Filtres */}
+      <section className="mb-16">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 bg-dark-200/50 p-6 rounded-2xl backdrop-blur-sm shadow-sm">
+            {/* Recherche */}
+            <div className="relative flex-grow max-w-xl">
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <svg className="w-5 h-5 text-dark-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <input
+                type="text"
+                className="w-full pl-10 pr-4 py-3 bg-dark-100/50 border border-dark-300/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-500 transition-all"
+                placeholder="Rechercher un article..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
+            
+            {/* Catégories */}
+            <div className="flex flex-wrap gap-2">
+              {categories.map(category => (
+                <button
+                  key={category}
+                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    activeCategory === category
+                      ? 'bg-accent-500 text-white'
+                      : 'bg-dark-300/30 text-dark-700 hover:bg-dark-300/50'
+                  }`}
+                  onClick={() => setActiveCategory(category)}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
       </section>
       
       {/* Blog Posts - Nouvelle mise en page en grille */}
@@ -286,7 +335,7 @@ export default function Blog() {
             
             {/* Grille d'articles 2x2 */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {blogPosts.slice(1, 5).map((post, index) => (
+              {filteredPosts.map((post, index) => (
                 <m.article 
                   key={post.id} 
                   className="glass rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 will-change-transform flex flex-col h-full"

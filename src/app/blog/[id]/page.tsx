@@ -328,25 +328,33 @@ const getBlogPosts = () => {
   ];
 };
 
-// Fonction pour obtenir un article spécifique par son ID
-const getBlogPostById = (id: number) => {
-  const posts = getBlogPosts();
-  return posts.find(post => post.id === id);
+// Fonction pour obtenir un article par son ID
+const getBlogPostById = (id: string | number) => {
+  const numericId = typeof id === 'string' ? parseInt(id, 10) : id;
+  return getBlogPosts().find(post => post.id === numericId);
 };
 
-// Page individuelle d'article de blog
-export default function BlogPost({ params }: { params: { id: string } }) {
-  const postId = parseInt(params.id);
-  const post = getBlogPostById(postId);
+// Type des paramètres de la page
+type BlogPostParams = {
+  params: {
+    id: string;
+  };
+};
 
-  // Si l'article n'existe pas, on pourrait rediriger ou afficher un message d'erreur
-  if (!post) {
+export default function BlogPost({ params }: BlogPostParams) {
+  const blogPost = getBlogPostById(params.id);
+  
+  // Si l'article n'existe pas
+  if (!blogPost) {
     return (
-      <div className="container mx-auto px-4 py-20">
-        <h1 className="text-3xl font-bold text-dark-900 mb-6">Article non trouvé</h1>
-        <p className="text-dark-700 mb-6">L'article que vous recherchez n'existe pas ou a été déplacé.</p>
-        <Link href="/blog" className="text-accent-500 hover:text-accent-600 flex items-center">
-          <span className="mr-2">←</span> Retour au blog
+      <div className="container mx-auto px-4 py-32 text-center">
+        <h1 className="text-3xl font-bold mb-6">Article introuvable</h1>
+        <p className="mb-8">L'article que vous recherchez n'existe pas ou a été déplacé.</p>
+        <Link 
+          href="/blog" 
+          className="inline-flex items-center px-6 py-3 rounded-lg bg-accent-500 text-white hover:bg-accent-600 transition-colors"
+        >
+          Retour au blog
         </Link>
       </div>
     );
@@ -411,21 +419,21 @@ export default function BlogPost({ params }: { params: { id: string } }) {
             
             <m.div variants={fadeInUp} className="flex flex-wrap items-center gap-3 mb-4">
               <span className="bg-dark-300/50 text-dark-800 px-4 py-1 rounded-full text-sm font-medium backdrop-blur-sm">
-                {post.category}
+                {blogPost.category}
               </span>
-              <span className="text-dark-600 text-sm">{post.date}</span>
+              <span className="text-dark-600 text-sm">{blogPost.date}</span>
             </m.div>
             
             <m.h1 variants={fadeInUp} className="text-4xl md:text-5xl font-bold mb-10 text-dark-900 max-w-4xl">
-              {post.title}
+              {blogPost.title}
             </m.h1>
             
             <m.div variants={fadeInUp} className="flex items-center">
               <div className="w-14 h-14 bg-accent-500/10 rounded-full mr-5 flex items-center justify-center text-2xl">
-                {post.imageEmoji}
+                {blogPost.imageEmoji}
               </div>
               <div>
-                <p className="font-semibold text-dark-800">{post.author}</p>
+                <p className="font-semibold text-dark-800">{blogPost.author}</p>
                 <p className="text-sm text-dark-600">Auteur</p>
               </div>
             </m.div>
@@ -434,7 +442,7 @@ export default function BlogPost({ params }: { params: { id: string } }) {
       </section>
       
       {/* Article Cover Image - Nouvelle section */}
-      {post.image && (
+      {blogPost.image && (
         <section className="py-8 bg-dark-50">
           <div className="container mx-auto px-4">
             <m.div 
@@ -443,11 +451,11 @@ export default function BlogPost({ params }: { params: { id: string } }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${post.color || 'from-accent-500/20 to-accent-600/20'} z-0`}></div>
+              <div className={`absolute inset-0 bg-gradient-to-br ${blogPost.color || 'from-accent-500/20 to-accent-600/20'} z-0`}></div>
               <div className="absolute inset-0 z-10">
                 <Image 
-                  src={post.image}
-                  alt={post.title}
+                  src={blogPost.image}
+                  alt={blogPost.title}
                   fill
                   priority={true}
                   sizes="(max-width: 768px) 100vw, 80vw"
@@ -470,13 +478,13 @@ export default function BlogPost({ params }: { params: { id: string } }) {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <m.div className="prose prose-lg prose-dark mx-auto glass p-8 md:p-12 rounded-2xl">
-              <div dangerouslySetInnerHTML={{ __html: post.content }} />
+              <div dangerouslySetInnerHTML={{ __html: blogPost.content }} />
             </m.div>
             
             {/* Article Tags - Nouvelle section */}
             <div className="mt-12 flex flex-wrap gap-2 justify-center">
               <span className="px-4 py-1.5 rounded-full text-sm bg-dark-200/50 text-dark-600 backdrop-blur-sm">
-                #{post.category.toLowerCase().replace(/\s+/g, '')}
+                #{blogPost.category.toLowerCase().replace(/\s+/g, '')}
               </span>
               <span className="px-4 py-1.5 rounded-full text-sm bg-dark-200/50 text-dark-600 backdrop-blur-sm">
                 #article
@@ -507,7 +515,7 @@ export default function BlogPost({ params }: { params: { id: string } }) {
               className="grid grid-cols-1 md:grid-cols-3 gap-8"
             >
               {getBlogPosts()
-                .filter(p => p.id !== post.id)
+                .filter(p => p.id !== blogPost.id)
                 .slice(0, 3)
                 .map(relatedPost => (
                   <Link
