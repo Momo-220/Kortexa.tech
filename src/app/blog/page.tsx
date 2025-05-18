@@ -126,7 +126,7 @@ export default function Blog() {
   ];
 
   // Extraire toutes les catégories uniques
-  const categories = ["Tous", ...Array.from(new Set(blogPosts.map(post => post.category)))];
+  const categories = ["Tous", ...new Set(blogPosts.map(post => post.category))];
   
   // Filtrer les articles en fonction de la recherche et de la catégorie
   const filteredPosts = blogPosts.filter(post => {

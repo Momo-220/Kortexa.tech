@@ -1,12 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
-  },
-  experimental: {
+  swcMinify: true,
+  experimental: { 
     optimizeCss: true,
     optimisticClientCache: true, // Mise en cache optimiste pour navigation plus rapide
+    serverComponentsExternalPackages: ['react', 'react-dom']
+  },
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production' ? {
+      exclude: ['error', 'warn'],
+    } : false,
   },
   images: {
     formats: ['image/avif', 'image/webp'],
@@ -24,6 +28,9 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
   productionBrowserSourceMaps: false,
+  // Optimiser la navigation côté serveur
+  skipMiddlewareUrlNormalize: true,
+  skipTrailingSlashRedirect: true,
   // Port par défaut défini explicitement
   serverRuntimeConfig: {
     port: 3002,
@@ -35,4 +42,4 @@ const nextConfig = {
   output: 'standalone', // Optimise pour les déploiements en production
 }
 
-export default nextConfig 
+module.exports = nextConfig 
