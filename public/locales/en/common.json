@@ -1,0 +1,306 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact",
+    "contactUs": "Contact us"
+  },
+  "header": {
+    "title": "Transform your business with <span class=\"text-gradient\">advanced AI</span>",
+    "subtitle": "Kortexa.tech develops custom artificial intelligence solutions to optimize your processes, analyze your data and drive innovation.",
+    "tagline": "Next Generation Artificial Intelligence",
+    "cta": {
+      "services": "Discover our services",
+      "contact": "Contact our experts"
+    },
+    "trustedBy": "THEY TRUST US",
+    "discover": "Discover",
+    "assistant": {
+      "title": "Kortexa AI Assistant",
+      "subtitle": "Advanced conversational interface with analytical capabilities",
+      "demo": "Interactive demo"
+    }
+  },
+  "about": {
+    "ourStory": "Our Story",
+    "ourVision": "Our Vision",
+    "visionText": "We believe in a future where artificial intelligence is accessible to everyone and contributes positively to society. Our mission is to create innovative AI solutions that transform businesses and improve everyday life.",
+    "ourValues": "Our Values",
+    "ourTeam": "Our Team",
+    "team": {
+      "member1": {
+        "name": "Sophie Martin",
+        "role": "CEO & Founder",
+        "bio": "10 years of experience in AI and development. Passionate about technological innovation."
+      },
+      "member2": {
+        "name": "Thomas Dubois",
+        "role": "CTO",
+        "bio": "Expert in cloud architecture and distributed systems. Open source contributor."
+      },
+      "member3": {
+        "name": "Julie Bernard",
+        "role": "Lead Data Scientist",
+        "bio": "Specialist in machine learning and natural language processing."
+      }
+    },
+    "value": {
+      "innovation": "Innovation",
+      "innovation.desc": "We constantly push the boundaries of technology to create innovative AI solutions adapted to modern challenges.",
+      "excellence": "Excellence",
+      "excellence.desc": "We are committed to delivering exceptional quality work in all aspects of our projects and interactions.",
+      "ethics": "Ethics",
+      "ethics.desc": "We develop AI responsibly, emphasizing transparency, fairness, and data privacy.",
+      "collaboration": "Collaboration",
+      "collaboration.desc": "We believe in the power of collaboration to solve complex problems and create more robust solutions."
+    }
+  },
+  "services": {
+    "title": "Our Expertise",
+    "heading": "<span class=\"text-gradient\">Artificial Intelligence</span> Solutions",
+    "subtitle": "Innovative and tailored technologies to transform your business in the digital and artificial intelligence era.",
+    "learnMore": "Learn more",
+    "features": "Features",
+    "technologies": "Technologies",
+    "caseStudy": "Case Study",
+    "caseStudyAlt": "Case Study",
+    "keyResults": "Key Results",
+    "requestQuote": "Request a custom quote",
+    "metrics": {
+      "productivity": "Productivity",
+      "costs": "Costs",
+      "satisfaction": "Satisfaction"
+    },
+    "cta": {
+      "title": "Need a solution not listed here?",
+      "description": "We also develop custom solutions tailored to your specific needs. Contact us to discuss your project.",
+      "contactUs": "Contact us",
+      "viewProjects": "View our projects",
+      "services": "Discover our services",
+      "contact": "Contact our experts"
+    },
+    "web-dev": {
+      "title": "Web Development",
+      "description": "Innovative web applications with modern and high-performance interfaces.",
+      "feature1": "Progressive Web Applications (PWA)",
+      "feature2": "Showcase websites and e-commerce",
+      "feature3": "Dashboards and administration interfaces",
+      "feature4": "Performance optimization",
+      "feature5": "Responsive and adaptive design",
+      "useCase": "Creation of a responsive e-learning platform with administrator dashboard for a language school, integrating AI features for analyzing student progress."
+    },
+    "mobile-dev": {
+      "title": "Mobile Development",
+      "description": "Native and cross-platform mobile applications for iOS and Android.",
+      "feature1": "iOS and Android applications",
+      "feature2": "Cross-platform solutions",
+      "feature3": "Native service integration",
+      "feature4": "Mobile performance optimization",
+      "feature5": "Testing on various devices",
+      "useCase": "Development of a mobile health tracking application for a medical startup, with real-time data synchronization and personalized AI-based analytics."
+    },
+    "ai-solutions": {
+      "title": "Artificial Intelligence Solutions",
+      "description": "Custom artificial intelligence to automate and optimize your processes.",
+      "feature1": "Natural Language Processing (NLP)",
+      "feature2": "Computer Vision",
+      "feature3": "Recommendation Systems",
+      "feature4": "Predictive Analytics",
+      "feature5": "Reinforcement Learning",
+      "useCase": "Creation of an anomaly detection system for an industrial group, enabling real-time identification of production defects through computer vision."
+    },
+    "automation": {
+      "title": "Automation",
+      "description": "Automate your workflows and improve your operational efficiency.",
+      "feature1": "Business Process Automation (BPA)",
+      "feature2": "System Integration",
+      "feature3": "Custom Workflows",
+      "feature4": "Robotic Process Automation (RPA)",
+      "feature5": "Marketing Automation",
+      "useCase": "Implementation of an automation system for a law firm, reducing time spent on repetitive administrative tasks by 70% and decreasing human error."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Let's talk about your project and see how we can help you",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone (optional)",
+      "company": "Company (optional)",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": "Your message has been sent successfully. We will get back to you shortly.",
+      "error": "An error occurred while sending your message. Please try again.",
+      "subject": {
+        "option1": "Request a quote",
+        "option2": "Question about our services",
+        "option3": "Partnership",
+        "option4": "Other"
+      }
+    }
+  },
+  "homepage": {
+    "tabFeature": {
+      "title": "Next Generation Artificial Intelligence",
+      "mainTitle": "Transform your business with advanced AI",
+      "description": "Kortexa.tech develops custom artificial intelligence solutions to optimize your processes, analyze your data, and drive innovation.",
+      "primaryButtonText": "Discover our services",
+      "secondaryButtonText": "Contact our experts"
+    },
+    "services": {
+      "sectionTitle": "What we offer",
+      "mainTitle": "Artificial Intelligence Solutions",
+      "description": "We develop cutting-edge AI solutions to optimize your processes, analyze your data, and create exceptional user experiences.",
+      "allServices": "All our services",
+      "servicesList": {
+        "conversational": {
+          "title": "Conversational AI",
+          "description": "Intelligent assistants capable of understanding natural language and interacting smoothly with your users."
+        },
+        "dataAnalysis": {
+          "title": "Data Analysis",
+          "description": "Transform your raw data into actionable insights with our advanced predictive and descriptive analytics models."
+        },
+        "automation": {
+          "title": "Automation",
+          "description": "Optimize your business processes by automating repetitive tasks to reduce errors and increase productivity."
+        },
+        "vision": {
+          "title": "Visual Recognition",
+          "description": "Analyze images and videos with our computer vision models to detect objects, people, and behaviors."
+        },
+        "nlp": {
+          "title": "Natural Language Processing",
+          "description": "Analyze and understand human language with our advanced NLP models for information extraction and sentiment analysis."
+        },
+        "recommendation": {
+          "title": "Recommendation Systems",
+          "description": "Offer personalized experiences with algorithms that predict your users' preferences with high accuracy."
+        },
+        "generative": {
+          "title": "Generative AI",
+          "description": "Create textual, visual, or audio content with our generative models that produce creative and innovative results."
+        },
+        "iot": {
+          "title": "Smart IoT Solutions",
+          "description": "Connect your devices to AI models to analyze real-time data and make automated intelligent decisions."
+        }
+      }
+    },
+    "caseStudy": {
+      "sectionTitle": "Case Study",
+      "title": "Digital transformation of a pharmaceutical company",
+      "description": "Discover how our AI solution optimized the supply chain and accelerated research for one of the world's leading pharmaceutical companies.",
+      "benefits": {
+        "cost": "35% reduction in operational costs",
+        "research": "60% acceleration in the research process",
+        "prediction": "45% improvement in forecast accuracy"
+      },
+      "cta": "Read the full case study"
+    },
+    "stats": {
+      "sectionTitle": "Key figures",
+      "title": "Our Impact in Numbers",
+      "items": {
+        "satisfaction": "Client satisfaction",
+        "support": "Technical support",
+        "projects": "Projects completed",
+        "experts": "AI experts"
+      }
+    },
+    "cta": {
+      "title": "Ready to transform your business with <span class=\"text-accent-500\">AI</span>?",
+      "description": "Contact our experts for a personalized consultation and discover how our solutions can meet your specific needs.",
+      "button": "Contact us"
+    }
+  },
+  "testimonials": {
+    "title": "They trust us",
+    "subtitle": "Companies of all sizes trust Kortexa.tech for their artificial intelligence solutions.",
+    "items": [
+      {
+        "id": "1",
+        "quote": "Kortexa.tech has transformed our approach to data analysis. Their AI identified trends we would never have discovered.",
+        "name": "Sophie Leclerc",
+        "company": "InnoTech Solutions"
+      },
+      {
+        "id": "2",
+        "quote": "After several recommendations, I finally called on Kortexa. It's absolutely amazing. If you love innovation, you'll be won over.",
+        "name": "Thomas Dubois",
+        "company": "Nexum Group"
+      },
+      {
+        "id": "3",
+        "quote": "Kortexa.tech is at the cutting edge of innovation. I hit 'Tab' more often than anything else now!",
+        "name": "Julie Moreau",
+        "company": "DataFlow Inc"
+      },
+      {
+        "id": "4",
+        "quote": "Their AI system is the best on the market. The codebase worked from the first use.",
+        "name": "Marc Lambert",
+        "company": "BioTech Innovations"
+      },
+      {
+        "id": "5",
+        "quote": "Kortexa.tech helped us automate our processes with incredible precision. The AI models are truly custom-made.",
+        "name": "Camille Bernard",
+        "company": "SmartRetail"
+      },
+      {
+        "id": "6",
+        "quote": "I installed the Kortexa solution... wow! A revolutionary product that exceeded all our expectations from the start.",
+        "name": "Paul Mercier",
+        "company": "TechFusion"
+      },
+      {
+        "id": "7",
+        "quote": "Their predictive algorithms are remarkably accurate and have transformed our ability to anticipate market trends.",
+        "name": "Émilie Rousseau",
+        "company": "FinTech Global"
+      },
+      {
+        "id": "8",
+        "quote": "Kortexa's support is exceptional. It's more than a provider, it's a true innovation accelerator for our company.",
+        "name": "Antoine Lefebvre",
+        "company": "E-Commerce Plus"
+      }
+    ]
+  },
+  "footer": {
+    "company": "Company",
+    "about": "About",
+    "values": "Our values",
+    "careers": "Careers",
+    "partners": "Partners",
+    "resources": "Resources",
+    "blog": "Blog",
+    "documentation": "Documentation",
+    "projects": "Projects",
+    "api": "API",
+    "legal": "Legal",
+    "legalNotice": "Legal notice",
+    "privacyPolicy": "Privacy policy",
+    "termsOfUse": "Terms of use",
+    "services": "Services",
+    "conversationalAI": "Conversational AI",
+    "automation": "Automation",
+    "dataAnalysis": "Data analysis",
+    "customSolutions": "Custom solutions",
+    "description": "Advanced artificial intelligence solutions for the digital transformation of your business. Our cutting-edge technology combines data analysis, automation and conversational interfaces.",
+    "copyright": "© {year} Kortexa Technologies. All rights reserved.",
+    "newsletter": {
+      "title": "Stay at the forefront of AI",
+      "description": "Subscribe to our newsletter to receive our latest news, articles and resources.",
+      "placeholder": "Your email address",
+      "button": "Subscribe"
+    }
+  }
+} 

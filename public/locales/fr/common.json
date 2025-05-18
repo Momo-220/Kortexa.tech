@@ -1,0 +1,304 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À propos",
+    "projects": "Projets",
+    "blog": "Blog",
+    "contact": "Contact",
+    "contactUs": "Contactez-nous"
+  },
+  "header": {
+    "title": "Transformez votre entreprise avec <span class=\"text-gradient\">l'IA avancée</span>",
+    "subtitle": "Kortexa.tech développe des solutions d'intelligence artificielle sur mesure pour optimiser vos processus, analyser vos données et stimuler votre innovation.",
+    "tagline": "Intelligence Artificielle de Nouvelle Génération",
+    "cta": {
+      "services": "Découvrir nos services",
+      "contact": "Contacter nos experts"
+    },
+    "trustedBy": "ILS NOUS FONT CONFIANCE",
+    "discover": "Découvrir",
+    "assistant": {
+      "title": "Assistant IA Kortexa",
+      "subtitle": "Interface conversationnelle avancée avec capacités analytiques",
+      "demo": "Démo interactive"
+    }
+  },
+  "about": {
+    "ourStory": "Notre Histoire",
+    "ourVision": "Notre Vision",
+    "visionText": "Nous croyons en un avenir où l'intelligence artificielle est accessible à tous et contribue positivement à la société. Notre mission est de créer des solutions d'IA innovantes qui transforment les entreprises et améliorent le quotidien.",
+    "ourValues": "Nos Valeurs",
+    "ourTeam": "Notre Équipe",
+    "team": {
+      "member1": {
+        "name": "Sophie Martin",
+        "role": "CEO & Fondatrice",
+        "bio": "10 ans d'expérience en IA et développement. Passionnée par l'innovation technologique."
+      },
+      "member2": {
+        "name": "Thomas Dubois",
+        "role": "CTO",
+        "bio": "Expert en architecture cloud et systèmes distribués. Contributeur open source."
+      },
+      "member3": {
+        "name": "Julie Bernard",
+        "role": "Lead Data Scientist",
+        "bio": "Spécialiste en apprentissage automatique et traitement du langage naturel."
+      }
+    },
+    "value": {
+      "innovation": "Innovation",
+      "innovation.desc": "Nous repoussons constamment les limites de la technologie pour créer des solutions d'IA novatrices adaptées aux défis modernes.",
+      "excellence": "Excellence",
+      "excellence.desc": "Nous nous engageons à fournir un travail d'une qualité exceptionnelle dans tous les aspects de nos projets et interactions.",
+      "ethics": "Éthique",
+      "ethics.desc": "Nous développons l'IA de manière responsable, en mettant l'accent sur la transparence, l'équité et la confidentialité des données.",
+      "collaboration": "Collaboration",
+      "collaboration.desc": "Nous croyons au pouvoir de la collaboration pour résoudre des problèmes complexes et créer des solutions plus robustes."
+    }
+  },
+  "services": {
+    "title": "Notre Expertise",
+    "heading": "Solutions d'<span class=\"text-gradient\">Intelligence Artificielle</span>",
+    "subtitle": "Des technologies innovantes et sur mesure pour transformer votre entreprise à l'ère du numérique et de l'intelligence artificielle.",
+    "learnMore": "En savoir plus",
+    "features": "Fonctionnalités",
+    "technologies": "Technologies",
+    "caseStudy": "Étude de cas",
+    "caseStudyAlt": "Étude de cas",
+    "keyResults": "Résultats clés",
+    "requestQuote": "Demander un devis personnalisé",
+    "metrics": {
+      "productivity": "Productivité",
+      "costs": "Coûts",
+      "satisfaction": "Satisfaction"
+    },
+    "cta": {
+      "title": "Une solution qui ne figure pas dans la liste ?",
+      "description": "Nous développons également des solutions sur mesure adaptées à vos besoins spécifiques. Contactez-nous pour discuter de votre projet.",
+      "contactUs": "Nous contacter",
+      "viewProjects": "Voir nos projets"
+    },
+    "web-dev": {
+      "title": "Développement Web",
+      "description": "Applications web innovantes avec des interfaces modernes et performantes.",
+      "feature1": "Applications web progressives (PWA)",
+      "feature2": "Sites vitrines et e-commerce",
+      "feature3": "Tableaux de bord et interfaces d'administration",
+      "feature4": "Optimisation des performances",
+      "feature5": "Conception responsive et adaptative",
+      "useCase": "Création d'une plateforme e-learning responsive avec tableau de bord administrateur pour une école de langues, intégrant des fonctionnalités d'IA pour l'analyse des progrès des élèves."
+    },
+    "mobile-dev": {
+      "title": "Développement Mobile",
+      "description": "Applications mobiles natives et cross-platform pour iOS et Android.",
+      "feature1": "Applications iOS et Android",
+      "feature2": "Solutions cross-platform",
+      "feature3": "Intégration avec les services natifs",
+      "feature4": "Optimisation des performances mobiles",
+      "feature5": "Tests sur différents appareils",
+      "useCase": "Développement d'une application mobile de suivi de santé pour une startup médicale, avec synchronisation des données en temps réel et analyses personnalisées basées sur l'IA."
+    },
+    "ai-solutions": {
+      "title": "Solutions d'Intelligence Artificielle",
+      "description": "Intelligence artificielle sur mesure pour automatiser et optimiser vos processus.",
+      "feature1": "Traitement du langage naturel (NLP)",
+      "feature2": "Vision par ordinateur",
+      "feature3": "Systèmes de recommandation",
+      "feature4": "Analyse prédictive",
+      "feature5": "Apprentissage par renforcement",
+      "useCase": "Création d'un système de détection d'anomalies pour un groupe industriel, permettant d'identifier les défauts de production en temps réel grâce à la vision par ordinateur."
+    },
+    "automation": {
+      "title": "Automatisation",
+      "description": "Automatisez vos flux de travail et améliorez votre efficacité opérationnelle.",
+      "feature1": "Automatisation des processus métier (BPA)",
+      "feature2": "Intégration de systèmes",
+      "feature3": "Workflows personnalisés",
+      "feature4": "Robots logiciels (RPA)",
+      "feature5": "Automatisation du marketing",
+      "useCase": "Mise en place d'un système d'automatisation pour un cabinet d'avocats, réduisant de 70% le temps passé sur des tâches administratives répétitives et diminuant les erreurs humaines."
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Parlons de votre projet et voyons comment nous pouvons vous aider",
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse email",
+      "phone": "Téléphone (optionnel)",
+      "company": "Entreprise (optionnel)",
+      "subject": "Sujet",
+      "message": "Votre message",
+      "submit": "Envoyer le message",
+      "submitting": "Envoi en cours...",
+      "success": "Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.",
+      "error": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer.",
+      "subject": {
+        "option1": "Demande de devis",
+        "option2": "Question sur nos services",
+        "option3": "Partenariat",
+        "option4": "Autre"
+      }
+    }
+  },
+  "homepage": {
+    "tabFeature": {
+      "title": "Intelligence Artificielle de Nouvelle Génération",
+      "mainTitle": "Transformez votre entreprise avec l'IA avancée",
+      "description": "Kortexa.tech développe des solutions d'intelligence artificielle sur mesure pour optimiser vos processus, analyser vos données et stimuler votre innovation.",
+      "primaryButtonText": "Découvrir nos services",
+      "secondaryButtonText": "Contacter nos experts"
+    },
+    "services": {
+      "sectionTitle": "Ce que nous proposons",
+      "mainTitle": "Solutions d'Intelligence Artificielle",
+      "description": "Nous développons des solutions IA de pointe pour optimiser vos processus, analyser vos données et créer des expériences utilisateur exceptionnelles.",
+      "allServices": "Tous nos services",
+      "servicesList": {
+        "conversational": {
+          "title": "IA Conversationnelle",
+          "description": "Des assistants intelligents capables de comprendre le langage naturel et d'interagir de manière fluide avec vos utilisateurs."
+        },
+        "dataAnalysis": {
+          "title": "Analyse de Données",
+          "description": "Transformez vos données brutes en insights actionnables grâce à nos modèles avancés d'analyse prédictive et descriptive."
+        },
+        "automation": {
+          "title": "Automatisation",
+          "description": "Optimisez vos processus métier en automatisant les tâches répétitives pour réduire les erreurs et augmenter la productivité."
+        },
+        "vision": {
+          "title": "Reconnaissance Visuelle",
+          "description": "Analysez images et vidéos avec nos modèles de vision par ordinateur pour détecter objets, personnes et comportements."
+        },
+        "nlp": {
+          "title": "Traitement du Langage Naturel",
+          "description": "Analysez et comprenez le langage humain grâce à nos modèles de NLP avancés pour l'extraction d'information et l'analyse de sentiment."
+        },
+        "recommendation": {
+          "title": "Systèmes de Recommandation",
+          "description": "Offrez des expériences personnalisées avec des algorithmes qui prédisent les préférences de vos utilisateurs avec une grande précision."
+        },
+        "generative": {
+          "title": "IA Générative",
+          "description": "Créez du contenu textuel, visuel ou audio grâce à nos modèles génératifs qui produisent des résultats créatifs et innovants."
+        },
+        "iot": {
+          "title": "Solutions IoT Intelligentes",
+          "description": "Connectez vos appareils à des modèles d'IA pour analyser les données en temps réel et prendre des décisions intelligentes automatisées."
+        }
+      }
+    },
+    "caseStudy": {
+      "sectionTitle": "Étude de cas",
+      "title": "Transformation digitale d'une entreprise pharmaceutique",
+      "description": "Découvrez comment notre solution d'IA a permis d'optimiser la chaîne d'approvisionnement et d'accélérer la recherche pour l'un des leaders mondiaux de l'industrie pharmaceutique.",
+      "benefits": {
+        "cost": "Réduction de 35% des coûts opérationnels",
+        "research": "Accélération de 60% du processus de recherche",
+        "prediction": "Amélioration de 45% de la précision des prévisions"
+      },
+      "cta": "Lire l'étude de cas complète"
+    },
+    "stats": {
+      "sectionTitle": "Chiffres clés",
+      "title": "Notre Impact en Chiffres",
+      "items": {
+        "satisfaction": "Satisfaction client",
+        "support": "Support technique",
+        "projects": "Projets réalisés",
+        "experts": "Experts en IA"
+      }
+    },
+    "cta": {
+      "title": "Prêt à transformer votre entreprise avec l'<span class=\"text-accent-500\">IA</span>?",
+      "description": "Contactez nos experts pour une consultation personnalisée et découvrez comment nos solutions peuvent répondre à vos besoins spécifiques.",
+      "button": "Nous contacter"
+    }
+  },
+  "testimonials": {
+    "title": "Ils nous font confiance",
+    "subtitle": "Des entreprises de toutes tailles font confiance à Kortexa.tech pour leurs solutions d'intelligence artificielle.",
+    "items": [
+      {
+        "id": "1",
+        "quote": "Kortexa.tech a transformé notre approche de l'analyse de données. Leur IA a identifié des tendances que nous n'aurions jamais découvertes.",
+        "name": "Sophie Leclerc",
+        "company": "InnoTech Solutions"
+      },
+      {
+        "id": "2",
+        "quote": "Après plusieurs recommandations, j'ai finalement fait appel à Kortexa. C'est absolument incroyable. Si vous aimez l'innovation, vous serez conquis.",
+        "name": "Thomas Dubois",
+        "company": "Groupe Nexum"
+      },
+      {
+        "id": "3",
+        "quote": "Kortexa.tech est à la pointe de l'innovation. Je tape 'Tab' plus souvent que n'importe quoi d'autre maintenant !",
+        "name": "Julie Moreau",
+        "company": "DataFlow Inc"
+      },
+      {
+        "id": "4",
+        "quote": "Leur système d'IA est le meilleur sur le marché. La base de code fonctionnait dès la première utilisation.",
+        "name": "Marc Lambert",
+        "company": "BioTech Innovations"
+      },
+      {
+        "id": "5",
+        "quote": "Kortexa.tech nous a aidés à automatiser nos processus avec une précision incroyable. Les modèles d'IA sont vraiment sur mesure.",
+        "name": "Camille Bernard",
+        "company": "SmartRetail"
+      },
+      {
+        "id": "6",
+        "quote": "J'ai installé la solution Kortexa... wow ! Un produit révolutionnaire qui a dépassé toutes nos attentes dès le départ.",
+        "name": "Paul Mercier",
+        "company": "TechFusion"
+      },
+      {
+        "id": "7",
+        "quote": "Leurs algorithmes prédictifs sont d'une précision remarquable et ont transformé notre capacité à anticiper les tendances du marché.",
+        "name": "Émilie Rousseau",
+        "company": "FinTech Global"
+      },
+      {
+        "id": "8",
+        "quote": "Le support de Kortexa est exceptionnel. C'est plus qu'un fournisseur, c'est un véritable accélérateur d'innovation pour notre entreprise.",
+        "name": "Antoine Lefebvre",
+        "company": "E-Commerce Plus"
+      }
+    ]
+  },
+  "footer": {
+    "company": "Entreprise",
+    "about": "À propos",
+    "values": "Nos valeurs",
+    "careers": "Carrières",
+    "partners": "Partenaires",
+    "resources": "Ressources",
+    "blog": "Blog",
+    "documentation": "Documentation",
+    "projects": "Projets",
+    "api": "API",
+    "legal": "Légal",
+    "legalNotice": "Mentions légales",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfUse": "Conditions d'utilisation",
+    "services": "Services",
+    "conversationalAI": "IA Conversationnelle",
+    "automation": "Automatisation",
+    "dataAnalysis": "Analyse de données",
+    "customSolutions": "Solutions sur mesure",
+    "description": "Solutions d'intelligence artificielle avancées pour la transformation numérique de votre entreprise. Notre technologie de pointe combine analyse de données, automatisation et interfaces conversationnelles.",
+    "copyright": "© {year} Kortexa Technologies. Tous droits réservés.",
+    "newsletter": {
+      "title": "Restez à la pointe de l'IA",
+      "description": "Inscrivez-vous à notre newsletter pour recevoir nos dernières actualités, articles et ressources.",
+      "placeholder": "Votre adresse email",
+      "button": "S'inscrire"
+    }
+  }
+} 
